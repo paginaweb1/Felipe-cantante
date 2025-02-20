@@ -1,0 +1,169 @@
+
+<html>
+<head>
+<title>cantante</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+
+.checked {
+  color: orange;
+}
+</style>
+</head>
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+
+    <form action="/action_page.php" target="_blank">
+     </form>
+  </div>
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <span class="w3-bar-item">Rental</span>
+  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+
+
+  <!-- Push down content on small screens -->
+  
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <h2 class="w3-text-black">PORTAFOLIO</h2>
+
+    
+
+    <div class="w3-display-container mySlides">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JiRYZC6ICuY?si=CPCzLJ_DoQqO9LTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="w3-display-bottomleft w3-container w3-black">
+       
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="2img.png" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Repertorio toda ocasion!!</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="3img.png" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JiRYZC6ICuY?si=CPCzLJ_DoQqO9LTB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="1img.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Living room">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="2img.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Dining room">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="3img.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Bedroom">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="4img.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Second Living Room">
+
+    </div>
+  </div>
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+
+<footer class="w3-center w3-black w3-padding-64">
+   <h2>Redes Sociales </h2>
+  
+  <div class="w3-xlarge w3-section">
+   
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/Felipeguzman.cantante/videos" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/felipeguzmancantante/" title="Google +" target="_blank"><i class="fa fa-instagram"></i></a> 
+ 
+    <br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+
+ <div class="w3-container" style="position:relative">
+    <a href="https://wa.me/573162979230/?text=tu%20texto%20personalizado" target="_blank"onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+    style="position:absolute;top:-28px;right:24px"><i class="fa fa-whatsapp"></i></a>
+  </div>
+
+</body>
+
+
+    
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+
+</body>
+</html>
